@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2D1457B01F8F9C39009EB1C4 /* Atelier1_Parsing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atelier1_Parsing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D1457B01F8F9C39009EB1C4 /* Atelier1_Parsing_Codable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atelier1_Parsing_Codable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1457B31F8F9C39009EB1C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D1457B51F8F9C39009EB1C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D1457B81F8F9C39009EB1C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		2D1457B11F8F9C39009EB1C4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D1457B01F8F9C39009EB1C4 /* Atelier1_Parsing.app */,
+				2D1457B01F8F9C39009EB1C4 /* Atelier1_Parsing_Codable.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2D1457AF1F8F9C39009EB1C4 /* Atelier1_Parsing */ = {
+		2D1457AF1F8F9C39009EB1C4 /* Atelier1_Parsing_Codable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D1457C21F8F9C39009EB1C4 /* Build configuration list for PBXNativeTarget "Atelier1_Parsing" */;
+			buildConfigurationList = 2D1457C21F8F9C39009EB1C4 /* Build configuration list for PBXNativeTarget "Atelier1_Parsing_Codable" */;
 			buildPhases = (
 				2D1457AC1F8F9C39009EB1C4 /* Sources */,
 				2D1457AD1F8F9C39009EB1C4 /* Frameworks */,
@@ -131,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = Atelier1_Parsing;
+			name = Atelier1_Parsing_Codable;
 			productName = Atelier1_Parsing;
-			productReference = 2D1457B01F8F9C39009EB1C4 /* Atelier1_Parsing.app */;
+			productReference = 2D1457B01F8F9C39009EB1C4 /* Atelier1_Parsing_Codable.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -153,7 +153,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2D1457AB1F8F9C39009EB1C4 /* Build configuration list for PBXProject "Atelier1_Parsing" */;
+			buildConfigurationList = 2D1457AB1F8F9C39009EB1C4 /* Build configuration list for PBXProject "Atelier1_Parsing_Codable" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -166,7 +166,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D1457AF1F8F9C39009EB1C4 /* Atelier1_Parsing */,
+				2D1457AF1F8F9C39009EB1C4 /* Atelier1_Parsing_Codable */,
 			);
 		};
 /* End PBXProject section */
@@ -354,7 +354,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D1457AB1F8F9C39009EB1C4 /* Build configuration list for PBXProject "Atelier1_Parsing" */ = {
+		2D1457AB1F8F9C39009EB1C4 /* Build configuration list for PBXProject "Atelier1_Parsing_Codable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D1457C01F8F9C39009EB1C4 /* Debug */,
@@ -363,7 +363,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D1457C21F8F9C39009EB1C4 /* Build configuration list for PBXNativeTarget "Atelier1_Parsing" */ = {
+		2D1457C21F8F9C39009EB1C4 /* Build configuration list for PBXNativeTarget "Atelier1_Parsing_Codable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D1457C31F8F9C39009EB1C4 /* Debug */,
