@@ -11,25 +11,20 @@ import Foundation
 typealias JSON = [String:Any]
 
 extension FileManager {
-    static func jsonArray (fromJSONFile fileName:String) -> [JSON] {
+    
+    
+    static func jsonData (fromJSONFile fileName:String) -> Data? {
         guard let filePath = Bundle.main.path(forResource: fileName, ofType: "json") else {
             print ("No local json files for path \(fileName)")
-            return []
+            return nil
         }
         do {
             let data = try Data(contentsOf: URL(fileURLWithPath: filePath), options: [])
-            let json = try JSONSerialization.jsonObject(with: data, options: [])
-            if let array = json as? [JSON] {
-                return array
-            }
-            else {
-                print("\(fileName) doens't contain an array")
-                return []
-            }
+            return data
         }
         catch {
-            print("Could not get json from file, make sure that file \(fileName) contains valid json.")
-            return []
+            print ("Error while reading file \(fileName)")
+            return nil
         }
     }
 }
