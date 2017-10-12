@@ -8,8 +8,6 @@
 
 import UIKit
 
-typealias JSON = [String:Any]
-
 class Movie: NSObject {
     var title: String = ""
     var overview: String = ""
@@ -32,33 +30,14 @@ class Movie: NSObject {
         return "\(title) - (\(vote_average)/10)"
     }
     
-    static func movieList (fromFile path: String) -> [Movie] {
-        var movies = [Movie] ()
-        
-        // Transform the file into an array
-        do {
-            let data = try Data(contentsOf: URL(fileURLWithPath: path), options: [])
-            let json = try JSONSerialization.jsonObject(with: data, options: [])
-            // Build a movie for each of the dictionnary
-            if let array = json as? [JSON] {
-                for jsonPart in array {
-                    let movie = Movie(json: jsonPart)
-                    movies.append(movie)
-                }
-            }
-        }
-        catch {
-            print("Could not get json from file, make sure that file contains valid json.")
-        }
-        
-        return movies
-    }
-    
     static func movieList () -> [Movie] {
-        guard let fileName = Bundle.main.path(forResource: "BestMovie", ofType: "json") else {
-            print ("No local json files file with movies inside")
-            return []
+        let jsonMovies = FileManager.jsonArray(fromJSONFile: "BestMovie")
+        
+        var movies = [Movie]()
+        for jsonPart in jsonMovies {
+            let movie = Movie(json: jsonPart)
+            movies.append(movie)
         }
-        return self.movieList(fromFile: fileName)
+        return movies
     }
 }

@@ -15,6 +15,7 @@
 		2D1457CB1F8FA8E8009EB1C4 /* BestMovie.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D1457C91F8FA8E8009EB1C4 /* BestMovie.json */; };
 		2D1457CC1F8FA8E8009EB1C4 /* Genre.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D1457CA1F8FA8E8009EB1C4 /* Genre.json */; };
 		2D6617C11F8FA9C6000927B0 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6617C01F8FA9C6000927B0 /* Movie.swift */; };
+		2D6617C71F8FC336000927B0 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6617C61F8FC336000927B0 /* JSONHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2D1457C91F8FA8E8009EB1C4 /* BestMovie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BestMovie.json; sourceTree = "<group>"; };
 		2D1457CA1F8FA8E8009EB1C4 /* Genre.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Genre.json; sourceTree = "<group>"; };
 		2D6617C01F8FA9C6000927B0 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		2D6617C61F8FC336000927B0 /* JSONHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		2D1457C51F8F9C41009EB1C4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2D6617C51F8FC312000927B0 /* Helpers */,
 				2D6617C01F8FA9C6000927B0 /* Movie.swift */,
 			);
 			name = Model;
@@ -104,6 +107,14 @@
 			);
 			path = Data;
 			sourceTree = SOURCE_ROOT;
+		};
+		2D6617C51F8FC312000927B0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2D6617C61F8FC336000927B0 /* JSONHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -181,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D1457B61F8F9C39009EB1C4 /* ViewController.swift in Sources */,
+				2D6617C71F8FC336000927B0 /* JSONHelper.swift in Sources */,
 				2D1457B41F8F9C39009EB1C4 /* AppDelegate.swift in Sources */,
 				2D6617C11F8FA9C6000927B0 /* Movie.swift in Sources */,
 			);
