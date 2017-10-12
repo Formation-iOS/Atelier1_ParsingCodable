@@ -12,6 +12,9 @@
 		2D1457B91F8F9C39009EB1C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1457B71F8F9C39009EB1C4 /* Main.storyboard */; };
 		2D1457BB1F8F9C39009EB1C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1457BA1F8F9C39009EB1C4 /* Assets.xcassets */; };
 		2D1457BE1F8F9C39009EB1C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1457BC1F8F9C39009EB1C4 /* LaunchScreen.storyboard */; };
+		2D1457CB1F8FA8E8009EB1C4 /* BestMovie.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D1457C91F8FA8E8009EB1C4 /* BestMovie.json */; };
+		2D1457CC1F8FA8E8009EB1C4 /* Genre.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D1457CA1F8FA8E8009EB1C4 /* Genre.json */; };
+		2D6617C11F8FA9C6000927B0 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6617C01F8FA9C6000927B0 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		2D1457BA1F8F9C39009EB1C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D1457BD1F8F9C39009EB1C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D1457BF1F8F9C39009EB1C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D1457C91F8FA8E8009EB1C4 /* BestMovie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BestMovie.json; sourceTree = "<group>"; };
+		2D1457CA1F8FA8E8009EB1C4 /* Genre.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Genre.json; sourceTree = "<group>"; };
+		2D6617C01F8FA9C6000927B0 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +60,11 @@
 		2D1457B21F8F9C39009EB1C4 /* Atelier1_Parsing */ = {
 			isa = PBXGroup;
 			children = (
+				2D1457C81F8FA8E8009EB1C4 /* Data */,
+				2D1457C71F8F9C55009EB1C4 /* Services */,
+				2D1457C51F8F9C41009EB1C4 /* Model */,
+				2D1457C61F8F9C4A009EB1C4 /* ViewController */,
 				2D1457B31F8F9C39009EB1C4 /* AppDelegate.swift */,
-				2D1457B51F8F9C39009EB1C4 /* ViewController.swift */,
 				2D1457B71F8F9C39009EB1C4 /* Main.storyboard */,
 				2D1457BA1F8F9C39009EB1C4 /* Assets.xcassets */,
 				2D1457BC1F8F9C39009EB1C4 /* LaunchScreen.storyboard */,
@@ -63,6 +72,38 @@
 			);
 			path = Atelier1_Parsing;
 			sourceTree = "<group>";
+		};
+		2D1457C51F8F9C41009EB1C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D6617C01F8FA9C6000927B0 /* Movie.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2D1457C61F8F9C4A009EB1C4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2D1457B51F8F9C39009EB1C4 /* ViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		2D1457C71F8F9C55009EB1C4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		2D1457C81F8FA8E8009EB1C4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2D1457C91F8FA8E8009EB1C4 /* BestMovie.json */,
+				2D1457CA1F8FA8E8009EB1C4 /* Genre.json */,
+			);
+			path = Data;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -91,11 +132,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = CedricSoubrie;
 				TargetAttributes = {
 					2D1457AF1F8F9C39009EB1C4 = {
 						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,6 +165,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D1457CC1F8FA8E8009EB1C4 /* Genre.json in Resources */,
+				2D1457CB1F8FA8E8009EB1C4 /* BestMovie.json in Resources */,
 				2D1457BE1F8F9C39009EB1C4 /* LaunchScreen.storyboard in Resources */,
 				2D1457BB1F8F9C39009EB1C4 /* Assets.xcassets in Resources */,
 				2D1457B91F8F9C39009EB1C4 /* Main.storyboard in Resources */,
@@ -138,6 +182,7 @@
 			files = (
 				2D1457B61F8F9C39009EB1C4 /* ViewController.swift in Sources */,
 				2D1457B41F8F9C39009EB1C4 /* AppDelegate.swift in Sources */,
+				2D6617C11F8FA9C6000927B0 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +218,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -181,7 +228,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -223,7 +274,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -231,7 +284,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -264,7 +321,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.boudchouedition.Atelier1-Parsing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -276,7 +334,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.boudchouedition.Atelier1-Parsing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -299,6 +358,7 @@
 				2D1457C41F8F9C39009EB1C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
