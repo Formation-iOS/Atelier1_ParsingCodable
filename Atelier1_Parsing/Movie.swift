@@ -21,7 +21,9 @@ class Movie: NSObject, Codable {
     static func movieList () -> [Movie] {
         if let jsonData = FileManager.jsonData(fromJSONFile: "BestMovie") {
             let decoder = JSONDecoder()
-            encoder.da
+            let dateFormater = DateFormatter()
+            dateFormater.dateFormat = "yyyy-mm-dd"
+            decoder.dateDecodingStrategy = .formatted(dateFormater)
             return try! decoder.decode ([Movie].self, from: jsonData)
         }
         else {
