@@ -15,20 +15,21 @@ class Movie: NSObject, Codable {
     var release_date : Date = Date() // The movie DB format : "2017-09-05"
     
     override var description: String {
-        return "\(title) - (\(vote_average)/10)"
+        return "\(title) - (\(vote_average)/10) - \(release_date)"
     }
     
     static func movieList () -> [Movie] {
         if let jsonData = FileManager.jsonData(fromJSONFile: "BestMovie") {
             let decoder = JSONDecoder()
             let dateFormater = DateFormatter()
-            dateFormater.dateFormat = "yyyy-mm-dd"
+            dateFormater.dateFormat = "yyyy-MM-dd"
             decoder.dateDecodingStrategy = .formatted(dateFormater)
-            return try! decoder.decode ([Movie].self, from: jsonData)
+            do {
+                return try decoder.decode ([Movie].self, from: jsonData)
+            } catch let error {
+                print(error)
+            }
         }
-        else {
-            return []
-        }
-        
+        return []
     }
 }
