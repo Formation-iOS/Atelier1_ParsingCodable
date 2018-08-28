@@ -9,13 +9,21 @@
 import UIKit
 
 class Movie: NSObject, Codable {
+    
+    enum CodingKeys: String, CodingKey {
+        case title
+        case overview
+        case voteAverage = "vote_average"
+        case releaseDate = "release_date"
+    }
+    
     var title: String = ""
     var overview: String = ""
-    var vote_average: Float = 0.0
-    var release_date : Date = Date() // The movie DB format : "2017-09-05"
+    var voteAverage: Double = 0.0
+    var releaseDate : Date = Date() // The movie DB format : "2017-09-05"
     
     override var description: String {
-        return "\(title) - (\(vote_average)/10) - \(release_date)"
+        return "\(title) - (\(voteAverage)/10) - \(releaseDate) - \(overview)"
     }
     
     static func movieList () -> [Movie] {
@@ -23,6 +31,7 @@ class Movie: NSObject, Codable {
             let decoder = JSONDecoder()
             let dateFormater = DateFormatter()
             dateFormater.dateFormat = "yyyy-MM-dd"
+            dateFormater.timeZone = TimeZone(identifier: "GMT")
             decoder.dateDecodingStrategy = .formatted(dateFormater)
             do {
                 return try decoder.decode ([Movie].self, from: jsonData)
